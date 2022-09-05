@@ -39,8 +39,8 @@ const VerticalTimelineElement = ({
             style={iconStyle}
             onClick={iconOnClick}
             className={classNames(
-              iconClassName,
               'vertical-timeline-element-icon',
+              iconClassName,
               {
                 'bounce-in': inView || visible,
                 'is-hidden': !(inView || visible),
@@ -53,8 +53,8 @@ const VerticalTimelineElement = ({
             style={contentStyle}
             onClick={onTimelineElementClick}
             className={classNames(
-              textClassName,
               'vertical-timeline-element-content',
+              textClassName,
               {
                 'bounce-in': inView || visible,
                 'is-hidden': !(inView || visible),
@@ -68,8 +68,8 @@ const VerticalTimelineElement = ({
             {children}
             <span
               className={classNames(
-                dateClassName,
-                'vertical-timeline-element-date'
+                'vertical-timeline-element-date',
+                dateClassName
               )}
             >
               {date}
